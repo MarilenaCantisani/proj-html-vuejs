@@ -25,9 +25,6 @@ export default {
   components: {
     DoctorCard,
   },
-  data() {
-    return {};
-  },
 };
 </script>
 

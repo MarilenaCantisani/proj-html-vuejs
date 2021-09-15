@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <div class="doctor-card"></div>
+</template>
 
 <script>
 export default {
