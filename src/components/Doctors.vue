@@ -11,8 +11,13 @@
         accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
         illo inventore veritatis et quasi architecto beatae
       </p>
+      <!-- Section cards doctors -->
       <article>
-        <DoctorCard />
+        <ul class="card-container">
+          <li v-for="doctor in doctors" :key="doctor.name">
+            <DoctorCard :doctor="doctor" />
+          </li>
+        </ul>
       </article>
     </div>
   </section>
@@ -24,6 +29,27 @@ export default {
   name: "Doctors",
   components: {
     DoctorCard,
+  },
+  data() {
+    return {
+      doctors: [
+        {
+          name: "Jon Snow",
+          specialization: "Anesthesiologist",
+          profile: require("@/assets/images/doctor-1.jpg"),
+        },
+        {
+          name: "Tony Stark",
+          specialization: "Cardiologist",
+          profile: require("@/assets/images/doctor-2.jpg"),
+        },
+        {
+          name: "Anna Smith",
+          specialization: "Nurse Practitioner",
+          profile: require("@/assets/images/doctor-3.jpg"),
+        },
+      ],
+    };
   },
 };
 </script>
