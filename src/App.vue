@@ -12,6 +12,7 @@
 <script>
 //// Header component import
 import Header from "@/components/Header.vue";
+//// Import components main section
 import WelcomeSection from "@/components/WelcomeSection.vue";
 export default {
   name: "App",
