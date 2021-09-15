@@ -9,19 +9,21 @@
       </li>
     </ul>
     <!-- Navigation bar button  -->
-    <button class="uppercase clickable" type="buttom">make appointment</button>
+    <button class="uppercase clickable btn-light-blue" type="buttom">
+      make appointment
+    </button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "ItemNav",
+  name: "NavItems",
   props: ["nav"],
 };
 </script>
 
 <style lang="scss" scoped>
-//// Import of variables
+//// Import variables
 @import "../scss/General/_vars.scss";
 //// Import style navigation bar
 @import "../scss/Header/NavStyle.scss";

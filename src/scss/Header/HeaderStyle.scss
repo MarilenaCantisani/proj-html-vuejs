@@ -1,12 +1,17 @@
+//// Logo
 #logo {
-    height: 36px;
-  }
-  .bg-header {
-    background-image: url("../assets/images/header-image-homepage.jpg");
-  }
-  #header-bar {
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  height: 30px;
+}
+//// Background header
+.bg-header {
+  background-image: url("../assets/images/header-image-homepage.jpg");
+  height: 74vh;
+  background-size: cover;
+}
+//* Header bar style
+#header-bar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

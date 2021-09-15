@@ -12,20 +12,34 @@
       </a>
       <!-- Navigation bar  -->
       <nav>
-        <ItemNav :nav="nav" />
+        <NavItems :nav="nav" />
       </nav>
     </section>
     <!-- Header bottom -->
-    <section id="spotlight"></section>
+    <section id="spotlight" class="container-small">
+      <div class="text-spotlight">
+        <h2>
+          <span>Caring </span>
+          <span class="text-light-blue">For Life</span>
+        </h2>
+        <p>
+          Kind words can be short and easy to speak, but their echoes are truly
+          endless. Adava Health focuses on you as if it was our own family.
+        </p>
+        <button class="btn-spotlight uppercase btn-light-blue clickable">
+          learn more
+        </button>
+      </div>
+    </section>
   </header>
 </template>
 
 <script>
-import ItemNav from "@/components/ItemNav.vue";
+import NavItems from "@/components/NavItems.vue";
 export default {
   name: "Header",
   components: {
-    ItemNav,
+    NavItems,
   },
   data() {
     return {
@@ -62,6 +76,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+//// Import variables
+@import "../scss/General/_vars.scss";
 //// Import general style header
 @import "../scss/Header/HeaderStyle.scss";
+//// Import spotlight style
+@import "../scss/Header/SpotlightStyle.scss";
 </style>

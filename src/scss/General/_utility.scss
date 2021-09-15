@@ -13,14 +13,24 @@ body {
     margin: 0 auto;
 }
 .container-small {
-    width: 1000px;
+    width: 650px;
     margin: 0 auto;
 }
-
 //* Text style
 .uppercase {
     text-transform: uppercase;
 }
 .clickable {
     cursor: pointer;
+}
+//* Button style 
+.btn-light-blue {
+    border-radius: 1px;
+    border: none;
+    background-color: $light-blue;
+    color: white;
+    &:hover {
+      background-color: $white;
+      color: $light-blue;
+    }
 }
