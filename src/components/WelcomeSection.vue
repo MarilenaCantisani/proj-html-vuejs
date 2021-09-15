@@ -1,15 +1,20 @@
 <template>
-  <section id="welcome-section">
+  <!-- Welcome section  -->
+  <section id="welcome-section" class="container-small text-center">
+    <!-- Title  -->
     <h3>Welcome to Avada Health</h3>
-    <p>
+    <!-- Description -->
+    <p class="description-section">
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
       doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
     </p>
-    <ul>
+    <!-- Info -->
+    <ul class="card-info">
+      <!-- V-for to cycle in the data array "welcome-info" -->
       <li v-for="info in welcomeInfo" :key="info.title">
         <a :href="info.url">
           <img :src="info.icon" :alt="info.title" />
-          <h4>{{ info.title }}</h4>
+          <h4 class="uppercase">{{ info.title }}</h4>
           <p>{{ info.text }}</p>
         </a>
       </li>
@@ -53,5 +58,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+//// Import variables
+@import "../scss/General/_vars.scss";
+//// Import welcome section style
+@import "../scss/Main/WelcomeStyle.scss";
 </style>
