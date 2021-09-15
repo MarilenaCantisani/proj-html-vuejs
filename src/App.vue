@@ -5,6 +5,7 @@
     <!-- Main -->
     <main>
       <WelcomeSection />
+      <Doctors />
     </main>
   </div>
 </template>
@@ -13,12 +14,17 @@
 //// Header component import
 import Header from "@/components/Header.vue";
 //// Import components main section
+//* Import welcome section
 import WelcomeSection from "@/components/WelcomeSection.vue";
+//* Import doctors section
+import Doctors from "@/components/Doctors.vue";
+
 export default {
   name: "App",
   components: {
     Header,
     WelcomeSection,
+    Doctors,
   },
 };
 </script>
