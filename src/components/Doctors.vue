@@ -16,8 +16,10 @@
 </template>
 
 <script>
-import DoctorCard from "@/components/DoctorCard.vue";
+//// Import component title section
 import SectionTitle from "@/components/SectionTitle.vue";
+//// Import component card doctor
+import DoctorCard from "@/components/DoctorCard.vue";
 export default {
   name: "Doctors",
   components: {

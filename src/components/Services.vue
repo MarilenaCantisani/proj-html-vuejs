@@ -1,6 +1,8 @@
 <template>
+  <!-- Services section  -->
   <section id="services">
     <div class="container-small">
+      <!-- Title -->
       <SectionTitle title="our health services" :iconSection="iconSection" />
       <!-- Info -->
       <Card :cards="services" id="services" />
@@ -9,8 +11,10 @@
 </template>
 
 <script>
-import Card from "@/components/Card.vue";
+//// Import component title section
 import SectionTitle from "@/components/SectionTitle.vue";
+//// Import component card
+import Card from "@/components/Card.vue";
 
 export default {
   name: "Services",

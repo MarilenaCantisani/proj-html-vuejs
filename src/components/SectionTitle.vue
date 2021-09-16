@@ -24,6 +24,5 @@ export default {
 //// Import variables
 @import "../scss/General/_vars.scss";
 //// General style of of title section
-
 @import "../scss/Main/TitleSectionStyle.scss";
 </style>

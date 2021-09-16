@@ -20,13 +20,13 @@
       <div class="text-spotlight">
         <h2>
           <span>Caring </span>
-          <span class="text-light-blue">For Life</span>
+          <span class="text-primary-color">For Life</span>
         </h2>
         <p>
           Kind words can be short and easy to speak, but their echoes are truly
           endless. Adava Health focuses on you as if it was our own family.
         </p>
-        <button class="btn-spotlight uppercase btn-light-blue clickable">
+        <button class="btn-spotlight uppercase btn-primary-color clickable">
           learn more
         </button>
       </div>

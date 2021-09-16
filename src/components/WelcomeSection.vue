@@ -1,6 +1,7 @@
 <template>
   <!-- Welcome section  -->
   <section id="welcome-section" class="container-small text-center">
+    <!-- Title -->
     <SectionTitle title="Welcome to Adava Health" id="welcome" />
     <!-- Info -->
     <Card :cards="welcomeInfo" id="card-welcome" />
@@ -8,14 +9,16 @@
 </template>
 
 <script>
-import Card from "@/components/Card.vue";
+//// Import component title section
 import SectionTitle from "@/components/SectionTitle.vue";
+//// Import component card
+import Card from "@/components/Card.vue";
 
 export default {
   name: "WelcomeSection",
   components: {
-    Card,
     SectionTitle,
+    Card,
   },
   data() {
     return {

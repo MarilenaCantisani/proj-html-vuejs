@@ -1,0 +1,23 @@
+#facilities {
+    .play-icon {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      img {
+        max-height: 40px;
+        margin: 0 auto;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .bg-section {
+      background-image: url("../assets/images/paralax-bg-tour-facilities.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+    }
+  }
+  .text-white {
+    color: $white;
+  }

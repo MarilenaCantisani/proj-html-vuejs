@@ -9,7 +9,7 @@
       </li>
     </ul>
     <!-- Navigation bar button  -->
-    <button class="uppercase clickable btn-light-blue" type="buttom">
+    <button class="uppercase clickable btn-primary-color" type="buttom">
       make appointment
     </button>
   </div>

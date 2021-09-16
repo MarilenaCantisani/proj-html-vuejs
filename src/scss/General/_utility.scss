@@ -27,13 +27,13 @@ body {
     text-align: center;
 }
 //* Button style 
-.btn-light-blue {
+.btn-primary-color {
     border-radius: 1px;
     border: none;
-    background-color: $light-blue;
+    background-color: $primary-color;
     color: white;
     &:hover {
       background-color: $white;
-      color: $light-blue;
+      color: $primary-color;
     }
 }

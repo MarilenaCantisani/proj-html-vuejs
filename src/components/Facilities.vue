@@ -1,41 +1,41 @@
 <template>
+  <!-- Facilities section  -->
   <section id="facilities">
     <div class="bg-section">
       <div class="container-small">
+        <!-- Title -->
         <SectionTitle
           title="tour our facilities"
           :iconSection="iconSection"
           class="text-white"
         />
       </div>
-      <div class="icon-play">
-        <img
-          id="play"
-          class="clickable"
-          src="@/assets/images/play-icon.png"
-          alt="play"
-        />
+      <!-- Play icon  -->
+      <div class="play-icon">
+        <img class="clickable" src="@/assets/images/play-icon.png" alt="play" />
       </div>
     </div>
-
-    <CardFacilities :cardInfo="facilitiesInfo" />
+    <!-- Facilities sections  -->
+    <FacilitiesSections :facilities="facilities" />
   </section>
 </template>
 
 <script>
-import CardFacilities from "@/components/CardFacilities.vue";
+//// Import component title section
 import SectionTitle from "@/components/SectionTitle.vue";
+//// Import component facilities section
+import FacilitiesSections from "@/components/FacilitiesSections.vue";
 
 export default {
   name: "Facilities",
   components: {
     SectionTitle,
-    CardFacilities,
+    FacilitiesSections,
   },
   data() {
     return {
       iconSection: require("@/assets/images/icon-7.png"),
-      facilitiesInfo: [
+      facilities: [
         {
           title: "Emergency Care",
           icon: require("@/assets/images/wave-divider.png"),
@@ -70,26 +70,6 @@ export default {
 <style lang="scss" scoped>
 //// Import variables
 @import "../scss/General/_vars.scss";
-//// General style of doctors section
-.icon-play {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-#play {
-  max-height: 40px;
-  margin: 0 auto;
-  &:hover {
-    transform: scale(1.1);
-  }
-}
-.bg-section {
-  background-image: url("../assets/images/paralax-bg-tour-facilities.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
-}
-.text-white {
-  color: $white;
-}
+//// General style of facilities section
+@import "../scss/Main/FacilitiesStyle.scss";
 </style>
