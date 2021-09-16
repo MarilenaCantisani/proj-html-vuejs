@@ -9,22 +9,17 @@
       doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
     </p>
     <!-- Info -->
-    <ul class="card-info">
-      <!-- V-for to cycle in the data array "welcome-info" -->
-      <li v-for="info in welcomeInfo" :key="info.title">
-        <a :href="info.url">
-          <img :src="info.icon" :alt="info.title" />
-          <h4 class="uppercase">{{ info.title }}</h4>
-          <p>{{ info.text }}</p>
-        </a>
-      </li>
-    </ul>
+    <Card :cards="welcomeInfo" id="card-welcome" />
   </section>
 </template>
 
 <script>
+import Card from "@/components/Card.vue";
 export default {
   name: "WelcomeSection",
+  components: {
+    Card,
+  },
   data() {
     return {
       welcomeInfo: [

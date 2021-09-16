@@ -2,7 +2,7 @@
   <!-- Doctors section -->
   <section id="doctors-section">
     <div class="container-small">
-      <img src="../assets/images/icon-5.png" alt="logo-doctors" />
+      <img src="../assets/images/icon-5.png" alt="doctors" />
       <!-- Title -->
       <h3 class="uppercase">meet our doctors</h3>
       <!-- Description -->

@@ -3,28 +3,20 @@
     <!-- Header -->
     <Header />
     <!-- Main -->
-    <main>
-      <WelcomeSection />
-      <Doctors />
-    </main>
+    <Main />
   </div>
 </template>
 
 <script>
 //// Header component import
 import Header from "@/components/Header.vue";
-//// Import components main section
-//* Import welcome section
-import WelcomeSection from "@/components/WelcomeSection.vue";
-//* Import doctors section
-import Doctors from "@/components/Doctors.vue";
+import Main from "@/components/Main.vue";
 
 export default {
   name: "App",
   components: {
     Header,
-    WelcomeSection,
-    Doctors,
+    Main,
   },
 };
 </script>
