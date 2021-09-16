@@ -1,7 +1,7 @@
+//// Style services card
 #services {
     text-align: center;
-    margin: 40px 0;
-    
+    margin: 40px 0; 
     img {
         height: 60px;
     }
@@ -10,7 +10,6 @@
         color: $dark-grey;
         font-size: 15px;
         margin: 16px 0;
-
     }
     p {
         font-weight: lighter;
@@ -20,4 +19,11 @@
         line-height: 26px;
         margin-bottom: 60px;
     }
+}
+//* Hover effect
+#services a:hover h4 {
+    color: $light-blue;
+}
+#services a:hover p {
+    color: $black;
 }

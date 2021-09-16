@@ -3,6 +3,7 @@
     <WelcomeSection />
     <Doctors />
     <Services />
+    <Facilities />
   </main>
 </template>
 
@@ -14,6 +15,8 @@ import WelcomeSection from "@/components/WelcomeSection.vue";
 import Doctors from "@/components/Doctors.vue";
 //* Import services section
 import Services from "@/components/Services.vue";
+//* Import facilities section
+import Facilities from "@/components/Facilities.vue";
 
 export default {
   name: "Main",
@@ -21,6 +24,7 @@ export default {
     WelcomeSection,
     Doctors,
     Services,
+    Facilities,
   },
 };
 </script>

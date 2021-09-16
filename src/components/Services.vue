@@ -74,10 +74,11 @@ export default {
 @import "../scss/General/_vars.scss";
 //// General style of doctors section
 #services {
-  padding: 40px 0;
+  padding: 10px 0;
   background-color: $white;
   text-align: center;
   color: $dark-grey;
+  margin-top: 30px;
   img {
     height: 60px;
   }
@@ -104,5 +105,4 @@ export default {
     text-align: center;
   }
 }
-///
 </style>

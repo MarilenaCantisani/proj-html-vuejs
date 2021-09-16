@@ -1,3 +1,4 @@
+//// Style welcome card
 #card-welcome {
   img {
     height: 60px;
@@ -18,4 +19,11 @@
     font-weight: lighter;
     line-height: 20px;
   }
+}
+//* Hover effects
+#card-welcome a:hover h4 {
+  color: $light-blue;
+}
+#card-welcome a:hover p {
+  color: $dark-grey;
 }
