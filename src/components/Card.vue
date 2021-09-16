@@ -24,7 +24,9 @@ export default {
 //// Import variables
 @import "../scss/General/_vars.scss";
 //// Cards import style
+//* Welcome card
 @import "../scss/Card/WelcomeCard.scss";
+//* Services card
 @import "../scss/Card/ServicesCard.scss";
 
 //// General cards style

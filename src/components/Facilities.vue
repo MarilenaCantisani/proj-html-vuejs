@@ -2,15 +2,13 @@
   <section id="facilities">
     <div class="bg-section">
       <div class="container-small">
-        <img src="../assets/images/icon-7.png" alt="facilities" />
-        <!-- Title -->
-        <h3 class="uppercase">tour our facilities</h3>
-        <!-- Description -->
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae
-        </p>
+        <SectionTitle
+          title="tour our facilities"
+          :iconSection="iconSection"
+          class="text-white"
+        />
+      </div>
+      <div class="icon-play">
         <img
           id="play"
           class="clickable"
@@ -26,13 +24,17 @@
 
 <script>
 import CardFacilities from "@/components/CardFacilities.vue";
+import SectionTitle from "@/components/SectionTitle.vue";
+
 export default {
   name: "Facilities",
   components: {
+    SectionTitle,
     CardFacilities,
   },
   data() {
     return {
+      iconSection: require("@/assets/images/icon-7.png"),
       facilitiesInfo: [
         {
           title: "Emergency Care",
@@ -69,40 +71,14 @@ export default {
 //// Import variables
 @import "../scss/General/_vars.scss";
 //// General style of doctors section
-#facilities {
-  padding: 40px 0;
-  color: $white;
-  text-align: center;
-
-  img {
-    height: 60px;
-  }
-  h3 {
-    font-size: 26px;
-    font-weight: lighter;
-    margin: 15px 0;
-    //* Pseudoelement to create a separator
-    &::after {
-      content: "";
-      width: 200px;
-      border: 0.5px solid $light-grey;
-      display: block;
-      margin: 0 auto;
-      margin-top: 20px;
-    }
-  }
-  p {
-    margin: 0 auto;
-    width: 500px;
-    line-height: 30px;
-    font-weight: lighter;
-    font-size: 17px;
-    text-align: center;
-  }
+.icon-play {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 #play {
   max-height: 40px;
-  margin-top: 20px;
+  margin: 0 auto;
   &:hover {
     transform: scale(1.1);
   }
@@ -112,5 +88,8 @@ export default {
   background-size: cover;
   background-position: center;
   height: 70vh;
+}
+.text-white {
+  color: $white;
 }
 </style>

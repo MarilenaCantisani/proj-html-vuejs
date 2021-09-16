@@ -1,13 +1,7 @@
 <template>
   <!-- Welcome section  -->
   <section id="welcome-section" class="container-small text-center">
-    <!-- Title  -->
-    <h3>Welcome to Avada Health</h3>
-    <!-- Description -->
-    <p class="description-section">
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-    </p>
+    <SectionTitle title="Welcome to Adava Health" id="welcome" />
     <!-- Info -->
     <Card :cards="welcomeInfo" id="card-welcome" />
   </section>
@@ -15,10 +9,13 @@
 
 <script>
 import Card from "@/components/Card.vue";
+import SectionTitle from "@/components/SectionTitle.vue";
+
 export default {
   name: "WelcomeSection",
   components: {
     Card,
+    SectionTitle,
   },
   data() {
     return {

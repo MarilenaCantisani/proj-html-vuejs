@@ -1,15 +1,7 @@
 <template>
   <section id="services">
     <div class="container-small">
-      <img src="../assets/images/icon-6.png" alt="heart" />
-      <!-- Title -->
-      <h3 class="uppercase">our healt services</h3>
-      <!-- Description -->
-      <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae
-      </p>
+      <SectionTitle title="our health services" :iconSection="iconSection" />
       <!-- Info -->
       <Card :cards="services" id="services" />
     </div>
@@ -18,14 +10,17 @@
 
 <script>
 import Card from "@/components/Card.vue";
+import SectionTitle from "@/components/SectionTitle.vue";
 
 export default {
   name: "Services",
   components: {
+    SectionTitle,
     Card,
   },
   data() {
     return {
+      iconSection: require("@/assets/images/icon-6.png"),
       services: [
         {
           icon: require("@/assets/images/icon-14.png"),
@@ -72,37 +67,4 @@ export default {
 <style lang="scss" scoped>
 //// Import variables
 @import "../scss/General/_vars.scss";
-//// General style of doctors section
-#services {
-  padding: 10px 0;
-  background-color: $white;
-  text-align: center;
-  color: $dark-grey;
-  margin-top: 30px;
-  img {
-    height: 60px;
-  }
-  h3 {
-    font-size: 26px;
-    font-weight: lighter;
-    margin: 15px 0;
-    //* Pseudoelement to create a separator
-    &::after {
-      content: "";
-      width: 200px;
-      border: 0.5px solid $light-grey;
-      display: block;
-      margin: 0 auto;
-      margin-top: 20px;
-    }
-  }
-  p {
-    margin: 0 auto;
-    width: 500px;
-    line-height: 30px;
-    font-weight: lighter;
-    font-size: 17px;
-    text-align: center;
-  }
-}
 </style>

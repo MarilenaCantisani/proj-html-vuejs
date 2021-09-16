@@ -2,15 +2,7 @@
   <!-- Doctors section -->
   <section id="doctors-section">
     <div class="container-small">
-      <img src="../assets/images/icon-5.png" alt="doctors" />
-      <!-- Title -->
-      <h3 class="uppercase">meet our doctors</h3>
-      <!-- Description -->
-      <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae
-      </p>
+      <SectionTitle title="meet our doctors" :iconSection="iconSection" />
       <!-- Section cards doctors -->
       <article>
         <ul class="card-container">
@@ -25,13 +17,16 @@
 
 <script>
 import DoctorCard from "@/components/DoctorCard.vue";
+import SectionTitle from "@/components/SectionTitle.vue";
 export default {
   name: "Doctors",
   components: {
     DoctorCard,
+    SectionTitle,
   },
   data() {
     return {
+      iconSection: require("@/assets/images/icon-5.png"),
       doctors: [
         {
           name: "Jon Snow",
