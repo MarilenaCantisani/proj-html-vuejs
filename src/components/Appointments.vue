@@ -13,15 +13,24 @@
         <input type="text" placeholder="Name*" required />
         <input type="email" placeholder="Email*" required class="m-20" />
         <input type="text" placeholder="Phone Number" />
-        <input type="text" placeholder="Appointment Date" class="m-20" />
+        <span class="container-date">
+          <i class="fas fa-calendar-alt"></i>
+          <input
+            id="date"
+            type="text"
+            placeholder="Appointment Date"
+            class="m-20"
+          />
+        </span>
         <textarea
           name=""
           id=""
           cols="30"
-          rows="10"
+          rows="5"
           placeholder="How can we help?*"
           required
         ></textarea>
+        <!-- Button form  -->
         <button class="btn-primary-color uppercase clickable">
           Make an appointment
         </button>
@@ -33,6 +42,7 @@
 <script>
 //// Import component title section
 import SectionTitle from "@/components/SectionTitle.vue";
+
 export default {
   name: "Appointments",
   components: {
@@ -44,26 +54,60 @@ export default {
 <style lang="scss" scoped>
 //// Import variables
 @import "../scss/General/_vars.scss";
-#appointments {
-  height: 80vh;
-  background-image: url("../assets/images/make-an-appointment.jpg");
+
+////Utility
+.m-20 {
+  margin-left: 20px;
 }
 .text-white {
   color: $white;
 }
-#form {
+
+//// Appointments section style
+#appointments {
+  height: 86vh;
+  background-image: url("../assets/images/make-an-appointment.jpg");
+  background-position: center;
+  background-size: cover;
+  #form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    width: 500px;
+    input {
+      flex-basis: 200px;
+      margin: 5px 2px;
+      padding: 8px 6px;
+      padding-right: 97px;
+    }
+    textarea,
+    button {
+      flex-basis: 495px;
+    }
+  }
+}
+
+//* Input type date
+.container-date {
+  border: 1px solid $primary-color;
+  height: 30px;
+  width: 245px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  width: 500px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2px;
+  #date {
+    border: none;
+    width: 100px;
+  }
+  .fa-calendar-alt {
+    color: $grey;
+    font-size: 10px;
+    padding-left: 10px;
+  }
 }
-#form input {
-  flex-basis: 200px;
-  margin: 5px 2px;
-  padding: 8px 10px;
-  padding-right: 97px;
-}
+
 input,
 textarea {
   background-color: transparent;
@@ -74,13 +118,7 @@ textarea {
   font-weight: 200;
 }
 
-#form textarea,
-button {
-  flex-basis: 500px;
-}
-.m-20 {
-  margin-left: 20px;
-}
+//* Button form style
 button {
   padding: 10px 0;
   margin: 10px 0;

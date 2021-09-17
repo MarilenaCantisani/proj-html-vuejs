@@ -5,11 +5,15 @@
     <!-- Title section-->
     <h3 class="uppercase">{{ title }}</h3>
     <!-- Description section-->
-    <p>
+    <p v-if="!iconSection">
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
       doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
     </p>
-    <p v-if="iconSection">inventore veritatis et quasi architecto beatae</p>
+    <p v-else>
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+      inventore veritatis et quasi architecto beatae
+    </p>
   </div>
 </template>
 
