@@ -48,7 +48,7 @@ export default {
   justify-content: center;
   margin: 0 auto;
   img {
-    height: 180px;
+    height: 160px;
   }
 }
 </style>

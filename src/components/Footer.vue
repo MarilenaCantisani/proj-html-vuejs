@@ -1,7 +1,7 @@
 <template>
   <footer>
     <Client />
-    <InfoFooter />
+    <InfoFooter :departments="departments" />
   </footer>
 </template>
 
@@ -14,6 +14,16 @@ export default {
   components: {
     Client,
     InfoFooter,
+  },
+  data() {
+    return {
+      departments: [
+        "Cardiology",
+        "Pediactrics",
+        "Diabetes Care",
+        "Ultrasound Echocardiogram",
+      ],
+    };
   },
 };
 </script>
