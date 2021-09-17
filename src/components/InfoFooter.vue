@@ -30,11 +30,13 @@
         <h6 class="uppercase">contact information</h6>
         <div>
           <i class="fas fa-map-marker-alt"></i>
-          <address>121king Street, London United Kingdom</address>
+          <address class="clickable">
+            121king Street, London United Kingdom
+          </address>
         </div>
         <div>
           <i class="fas fa-phone"></i>
-          <span>1.800.458.556</span>
+          <span class="clickable">1.800.458.556</span>
         </div>
       </div>
       <!-- Departments -->
@@ -43,7 +45,7 @@
         <ul>
           <li v-for="(department, index) in departments" :key="index">
             <i class="fas fa-chevron-circle-right"></i>
-            <a href="#">{{ department }}</a>
+            <a href="#" class="clickable">{{ department }}</a>
           </li>
         </ul>
         <button class="uppercase clickable">View our departments</button>

@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <Client />
+    <Client :clients="clients" />
     <InfoFooter :departments="departments" />
     <section id="copyright">
       <div class="container copy-container">
@@ -28,6 +28,24 @@ export default {
   },
   data() {
     return {
+      clients: [
+        {
+          img: require("@/assets/images/client-logos-3.png"),
+          text: "TurboPower",
+        },
+        {
+          img: require("@/assets/images/client-logos-1.png"),
+          text: "Healthy",
+        },
+        {
+          img: require("@/assets/images/client-logos-4.png"),
+          text: "Color People",
+        },
+        {
+          img: require("@/assets/images/client-logos-2.png"),
+          text: "Health",
+        },
+      ],
       departments: [
         "Cardiology",
         "Pediactrics",
@@ -56,7 +74,7 @@ export default {
     font-size: 10px;
     i,
     .text-copyright {
-      padding: 10px 0;
+      padding: 14px 0;
       margin-right: 2px;
       color: $grey;
     }

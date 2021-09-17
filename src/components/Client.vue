@@ -1,41 +1,22 @@
 <template>
   <!-- Section client  -->
   <section id="client">
-    <img
-      v-for="(client, index) in clients"
-      :key="index"
-      :src="client.img"
-      :alt="client.text"
-      :id="client.text + index"
-    />
+    <a href="#">
+      <img
+        v-for="(client, index) in clients"
+        :key="index"
+        :src="client.img"
+        :alt="client.text"
+        :id="client.text + index"
+      />
+    </a>
   </section>
 </template>
 
 <script>
 export default {
   name: "Client",
-  data() {
-    return {
-      clients: [
-        {
-          img: require("@/assets/images/client-logos-3.png"),
-          text: "TurboPower",
-        },
-        {
-          img: require("@/assets/images/client-logos-1.png"),
-          text: "Healthy",
-        },
-        {
-          img: require("@/assets/images/client-logos-4.png"),
-          text: "Color People",
-        },
-        {
-          img: require("@/assets/images/client-logos-2.png"),
-          text: "Health",
-        },
-      ],
-    };
-  },
+  props: ["clients"],
 };
 </script>
 
@@ -49,6 +30,9 @@ export default {
   margin: 0 auto;
   img {
     height: 160px;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 </style>

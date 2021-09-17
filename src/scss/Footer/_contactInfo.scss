@@ -23,11 +23,19 @@
       font-style: normal;
       padding-left: 10px;
       color: $grey;
+      &:hover {
+        text-decoration: underline;
+      }
     }
+
     span {
       font-size: 13px;
       font-weight: lighter;
       padding-left: 7px;
       color: $grey;
+      &:hover {
+        text-decoration: underline;
+      }
     }
 }
+
