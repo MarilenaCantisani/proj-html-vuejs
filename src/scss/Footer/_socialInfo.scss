@@ -1,0 +1,58 @@
+
+//// Style social info section
+.social-info {
+    width: 500px;
+    img {
+      width: 200px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 12px;
+      width: 420px;
+      font-weight: lighter;
+      line-height: 22px;
+      color: $grey;
+      &::after {
+        content: "";
+        width: 420px;
+        border: 0.1px solid $light-grey;
+        display: inline-block;
+      }
+    }
+    span {
+      font-size: 12px;
+      font-weight: lighter;
+      color: $dark-grey;
+    }
+    .social-icon {
+      margin-top: 18px;
+      font-size: 22px;
+      i {
+        padding-right: 5px;
+        &.fa-facebook-square {
+          color: $fb-color;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        &.fa-twitter-square {
+          color: $twitter-color;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        &.fa-youtube-square {
+          color: $youtube-color;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        &.fa-instagram-square {
+          color: $insta-color;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }

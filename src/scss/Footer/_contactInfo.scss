@@ -1,0 +1,33 @@
+//// Contact section style
+.contact-info {
+    h6 {
+      font-weight: 300;
+      font-size: 14px;
+      color: $dark-grey;
+      &::after {
+        content: "";
+        width: 30px;
+        border: 1px solid $primary-color;
+        display: block;
+        margin: 15px 0;
+      }
+    }
+    i {
+      color: $primary-color;
+      font-size: 12px;
+    }
+    address {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: lighter;
+      font-style: normal;
+      padding-left: 10px;
+      color: $grey;
+    }
+    span {
+      font-size: 13px;
+      font-weight: lighter;
+      padding-left: 7px;
+      color: $grey;
+    }
+}

@@ -42,12 +42,13 @@
         <h6 class="uppercase">medical depaertments</h6>
         <ul>
           <li v-for="(department, index) in departments" :key="index">
+            <i class="fas fa-chevron-circle-right"></i>
             <a href="#">{{ department }}</a>
           </li>
         </ul>
+        <button class="uppercase clickable">View our departments</button>
       </div>
     </div>
-    <div class="copyright"></div>
   </section>
 </template>
 
@@ -71,75 +72,6 @@ export default {
 <style lang="scss" scoped>
 //// Import variables
 @import "../scss/General/_vars.scss";
-
-//// General style
-#info-footer {
-  padding: 40px 0;
-}
-.adava-info {
-  display: flex;
-  align-items: center;
-}
-.contact-info,
-.departments-info {
-  width: 350px;
-}
-
-//// Style social info section
-.social-info {
-  width: 500px;
-  img {
-    width: 200px;
-    margin-bottom: 10px;
-  }
-  p {
-    font-size: 12px;
-    width: 420px;
-    font-weight: lighter;
-    line-height: 24px;
-    color: $grey;
-    &::after {
-      content: "";
-      width: 420px;
-      border: 0.1px solid $light-grey;
-      display: inline-block;
-    }
-  }
-  span {
-    font-size: 12px;
-    font-weight: lighter;
-    color: $dark-grey;
-  }
-  .social-icon {
-    margin-top: 20px;
-    font-size: 22px;
-    i {
-      padding-right: 5px;
-      &.fa-facebook-square {
-        color: $fb-color;
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-      &.fa-twitter-square {
-        color: $twitter-color;
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-      &.fa-youtube-square {
-        color: $youtube-color;
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-      &.fa-instagram-square {
-        color: $insta-color;
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-    }
-  }
-}
+//// Import footer style
+@import "../scss/Footer/FooterStyle.scss";
 </style>
