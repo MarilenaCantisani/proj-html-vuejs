@@ -1,46 +1,49 @@
-//// General style of title section
+//// STYLE TITLE SECTION
+//// General style 
 .section-title {
-    padding: 40px 0;
-    text-align: center;
-    color: $dark-grey;
-    img {
-      height: 60px;
-    }
-    h3 {
-      font-size: 26px;
-      font-weight: lighter;
-      margin: 15px 0;
-      //* Pseudoelement to create a separator
-      &::after {
-        content: "";
-        width: 200px;
-        border: 0.5px solid $light-grey;
-        display: block;
-        margin: 0 auto;
-        margin-top: 20px;
-      }
-    }
-    p {
+  padding: 40px 0;
+  text-align: center;
+  color: $dark-grey;
+  img {
+    height: 60px;
+  }
+  h3 {
+    font-size: 26px;
+    font-weight: lighter;
+    margin: 15px 0;
+    //* Pseudoelement to create a separator
+    &::after {
+      content: "";
+      width: 200px;
+      border: 0.5px solid $light-grey;
+      display: block;
       margin: 0 auto;
-      width: 500px;
-      line-height: 30px;
-      font-weight: lighter;
-      font-size: 17px;
-      text-align: center;
+      margin-top: 20px;
     }
+  }
+  p {
+    margin: 0 auto;
+    width: 500px;
+    line-height: 30px;
+    font-weight: lighter;
+    font-size: 17px;
+    text-align: center;
+  }
 }
-//// Style section welcome title
+// Style section welcome title
 #welcome h3 {
   text-transform: capitalize;
+  //* Pseudoelement
   &::after {
     content: "";
     border: 0;
   }
 }
-//// Style section appointments title
+// Style section appointments title
 #appointment h3 {
   text-transform: capitalize;
 }
+//* Pseudoelement
 #appointment p::after {
   content: "inventore veritatis et quasi architecto beatae";
 }

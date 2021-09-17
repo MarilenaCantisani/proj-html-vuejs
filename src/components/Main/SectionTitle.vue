@@ -1,4 +1,5 @@
 <template>
+  <!-- SECTION TITLE -->
   <div class="section-title">
     <!-- Icon section -->
     <img v-if="iconSection" :src="iconSection" :alt="title" />
@@ -26,7 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 //// Import variables
-@import "../scss/General/_vars.scss";
+@import "@/scss/General/_vars.scss";
 //// General style of of title section
-@import "../scss/Main/TitleSectionStyle.scss";
+@import "@/scss/Main/TitleSectionStyle.scss";
 </style>

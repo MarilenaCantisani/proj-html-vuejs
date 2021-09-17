@@ -1,5 +1,5 @@
 <template>
-  <!-- Section client  -->
+  <!-- CLIENT SECTION -->
   <section id="client">
     <a href="#">
       <img
@@ -21,9 +21,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+//// General style
 #client {
   height: 30vh;
-  background-image: url("../assets/images/rgb-gradient-bar-for-logo-carrasel.jpg");
+  background-image: url("../../assets/images/rgb-gradient-bar-for-logo-carrasel.jpg");
   display: flex;
   align-items: center;
   justify-content: center;

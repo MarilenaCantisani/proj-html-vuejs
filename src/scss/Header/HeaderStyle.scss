@@ -1,10 +1,11 @@
-//// Logo
+//// LOGO
 #logo {
   height: 30px;
 }
-//// Background header
+//// GENERAL HEADER STYLE
+//* Background header
 .bg-header {
-  background-image: url("../assets/images/header-image-homepage.jpg");
+  background-image: url("../../assets/images/header-image-homepage.jpg");
   height: 74vh;
   background-size: cover;
 }
@@ -15,3 +16,4 @@
   justify-content: space-between;
   align-items: center;
 }
+

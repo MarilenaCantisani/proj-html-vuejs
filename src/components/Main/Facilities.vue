@@ -1,5 +1,5 @@
 <template>
-  <!-- Facilities section  -->
+  <!-- FACILITIES SECTION -->
   <section id="facilities">
     <div class="bg-section">
       <div class="container-small">
@@ -22,9 +22,9 @@
 
 <script>
 //// Import component title section
-import SectionTitle from "@/components/SectionTitle.vue";
+import SectionTitle from "@/components/Main/SectionTitle.vue";
 //// Import component facilities section
-import FacilitiesSections from "@/components/FacilitiesSections.vue";
+import FacilitiesSections from "@/components/Main/FacilitiesSections.vue";
 
 export default {
   name: "Facilities",
@@ -35,6 +35,7 @@ export default {
   data() {
     return {
       iconSection: require("@/assets/images/icon-7.png"),
+      //* Facilities data array
       facilities: [
         {
           title: "Emergency Care",
@@ -69,7 +70,7 @@ export default {
 
 <style lang="scss" scoped>
 //// Import variables
-@import "../scss/General/_vars.scss";
+@import "@/scss/General/_vars.scss";
 //// General style of facilities section
-@import "../scss/Main/FacilitiesStyle.scss";
+@import "@/scss/Main/FacilitiesStyle.scss";
 </style>

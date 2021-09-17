@@ -1,5 +1,5 @@
 <template>
-  <!-- Appointments section  -->
+  <!-- AAPPOINTMENTS SECTION -->
   <section id="appointments">
     <div class="container-small">
       <!-- Title -->
@@ -13,6 +13,7 @@
         <input type="text" placeholder="Name*" required />
         <input type="email" placeholder="Email*" required class="m-20" />
         <input type="text" placeholder="Phone Number" />
+        <!-- Input date -->
         <span class="container-date">
           <i class="fas fa-calendar-alt"></i>
           <input
@@ -22,15 +23,9 @@
             class="m-20"
           />
         </span>
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="5"
-          placeholder="How can we help?*"
-          required
-        ></textarea>
-        <!-- Button form  -->
+        <textarea cols="30" rows="5" placeholder="How can we help?*" required>
+        </textarea>
+        <!-- Button form -->
         <button class="btn-primary-color uppercase clickable">
           Make an appointment
         </button>
@@ -41,7 +36,7 @@
 
 <script>
 //// Import component title section
-import SectionTitle from "@/components/SectionTitle.vue";
+import SectionTitle from "@/components/Main/SectionTitle.vue";
 
 export default {
   name: "Appointments",
@@ -53,7 +48,7 @@ export default {
 
 <style lang="scss" scoped>
 //// Import variables
-@import "../scss/General/_vars.scss";
+@import "@/scss/General/_vars.scss";
 //// Appointments section style
-@import "../scss/Main/AppointmentsStyle.scss";
+@import "@/scss/Main/AppointmentsStyle.scss";
 </style>

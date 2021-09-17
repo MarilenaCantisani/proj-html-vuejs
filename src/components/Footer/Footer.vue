@@ -17,8 +17,10 @@
 </template>
 
 <script>
-import Client from "@/components/Client.vue";
-import InfoFooter from "@/components/InfoFooter.vue";
+//// Import component Client section
+import Client from "@/components/Footer/Client.vue";
+//// Import component Info footer
+import InfoFooter from "@/components/Footer/InfoFooter.vue";
 
 export default {
   name: "Footer",
@@ -28,6 +30,7 @@ export default {
   },
   data() {
     return {
+      //* Clients data array
       clients: [
         {
           img: require("@/assets/images/client-logos-3.png"),
@@ -46,6 +49,7 @@ export default {
           text: "Health",
         },
       ],
+      //* Departments data array
       departments: [
         "Cardiology",
         "Pediactrics",
@@ -59,7 +63,7 @@ export default {
 
 <style lang="scss" scoped>
 //// Import variables
-@import "../scss/General/_vars.scss";
+@import "@/scss/General/_vars.scss";
 //// Utility
 .text-dark-grey {
   color: $dark-grey;

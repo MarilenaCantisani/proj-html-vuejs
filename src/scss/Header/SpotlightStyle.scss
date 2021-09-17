@@ -1,25 +1,25 @@
-//// Spotlight text style 
+//// SPOTLIGHT TEXT STYLE
 .text-spotlight {
   width: 500px;
   margin-top: 100px;
   h2 {
-    font-weight: lighter;
-    font-size: 40px;
-    color: $white;
-    margin-bottom: 15px;
-    .text-primary-color {
-      color: $primary-color;
-    }
+  font-weight: lighter;
+  font-size: 40px;
+  color: $white;
+  margin-bottom: 15px;
+  .text-primary-color {
+    color: $primary-color;
   }
-  p {
-    color: $white;
-    font-weight: 300;
-    margin-bottom: 20px;
-  }
-  //* Spotlight button style 
-  .btn-spotlight {
-    font-size: 12px;
-    font-weight: lighter;
-    padding: 6px 20px;
-  }
+}
+p {
+  color: $white;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+//* Spotlight button style 
+.btn-spotlight {
+  font-size: 12px;
+  font-weight: lighter;
+  padding: 6px 20px;
+}
 }

@@ -1,7 +1,8 @@
 <template>
+  <!-- NAVIGATION BAR -->
   <div id="nav-bar">
     <ul>
-      <!-- V-for to cycle in the data array of the nav-bar  -->
+      <!-- V-for to cycle in the data array of the nav-bar -->
       <li v-for="item in nav" :key="item.id">
         <a :href="item.url" :class="{ active: item.current }" class="uppercase">
           {{ item.text }}
@@ -9,7 +10,7 @@
       </li>
     </ul>
     <!-- Navigation bar button  -->
-    <button class="uppercase clickable btn-primary-color" type="buttom">
+    <button class="uppercase clickable btn-primary-color">
       make appointment
     </button>
   </div>
@@ -24,7 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 //// Import variables
-@import "../scss/General/_vars.scss";
+@import "@/scss/General/_vars.scss";
 //// Import style navigation bar
-@import "../scss/Header/NavStyle.scss";
+@import "@/scss//Header/NavStyle.scss";
 </style>

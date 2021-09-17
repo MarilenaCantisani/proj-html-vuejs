@@ -1,5 +1,5 @@
 <template>
-  <!-- Doctor card -->
+  <!-- DOCTOR CARD -->
   <div class="doctor-card clickable">
     <!-- Image  -->
     <img :src="doctor.profile" :alt="doctor.name" />
@@ -14,13 +14,13 @@
       <!-- Social icon link -->
       <div class="social-icon">
         <a href="#">
-          <i class="fab fa-facebook-square"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-twitter-square"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-instagram-square"></i>
+          <i
+            v-for="(social, index) in socialIcon"
+            :key="index"
+            class="fab"
+            :class="social"
+          >
+          </i>
         </a>
       </div>
     </div>
@@ -30,13 +30,13 @@
 <script>
 export default {
   name: "DoctorCard",
-  props: ["doctor"],
+  props: ["doctor", "socialIcon"],
 };
 </script>
 
 <style lang="scss" scoped>
 //// Import variables
-@import "../scss/General/_vars.scss";
+@import "@/scss/General/_vars.scss";
 //// Import style card doctor
-@import "../scss/Main/CardDoctorStyle.scss";
+@import "@/scss/Main/CardDoctorStyle.scss";
 </style>

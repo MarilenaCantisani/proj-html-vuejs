@@ -1,5 +1,5 @@
 <template>
-  <!-- Welcome section  -->
+  <!-- WELCOME SECTION -->
   <section id="welcome-section" class="container-small text-center">
     <!-- Title -->
     <SectionTitle title="Welcome to Adava Health" id="welcome" />
@@ -10,9 +10,9 @@
 
 <script>
 //// Import component title section
-import SectionTitle from "@/components/SectionTitle.vue";
+import SectionTitle from "@/components/Main/SectionTitle.vue";
 //// Import component card
-import Card from "@/components/Card.vue";
+import Card from "@/components/Main/Card.vue";
 
 export default {
   name: "WelcomeSection",
@@ -22,6 +22,7 @@ export default {
   },
   data() {
     return {
+      //* Welcome info data array
       welcomeInfo: [
         {
           icon: require("@/assets/images/icon-1.png"),
@@ -55,7 +56,16 @@ export default {
 
 <style lang="scss" scoped>
 //// Import variables
-@import "../scss/General/_vars.scss";
-//// Import welcome section style
-@import "../scss/Main/WelcomeStyle.scss";
+@import "@/scss/General/_vars.scss";
+//// Style welcome section
+#welcome-section {
+  margin-bottom: 30px;
+}
+//? Hover effects
+.card-info li:hover a h4 {
+  color: $primary-color;
+}
+.card-info li:hover a p {
+  color: $dark-grey;
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <!-- Services section  -->
+  <!-- SERVICES SECTION -->
   <section id="services">
     <div class="container-small">
       <!-- Title -->
@@ -12,9 +12,9 @@
 
 <script>
 //// Import component title section
-import SectionTitle from "@/components/SectionTitle.vue";
+import SectionTitle from "@/components/Main/SectionTitle.vue";
 //// Import component card
-import Card from "@/components/Card.vue";
+import Card from "@/components/Main/Card.vue";
 
 export default {
   name: "Services",
@@ -25,6 +25,7 @@ export default {
   data() {
     return {
       iconSection: require("@/assets/images/icon-6.png"),
+      //* Services data array
       services: [
         {
           icon: require("@/assets/images/icon-14.png"),
@@ -70,5 +71,5 @@ export default {
 
 <style lang="scss" scoped>
 //// Import variables
-@import "../scss/General/_vars.scss";
+@import "@/scss/General/_vars.scss";
 </style>

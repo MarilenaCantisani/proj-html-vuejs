@@ -1,12 +1,14 @@
 <template>
-  <!-- Facility section -->
+  <!-- FACILITY SECTION -->
   <ul class="facility">
     <li v-for="facility in facilities" :key="facility.title" :id="facility.id">
       <h5>{{ facility.title }}</h5>
       <img :src="facility.icon" :alt="facility.title" />
       <p>{{ facility.description }}</p>
       <button class="clickable">
-        <a class="uppercase" href="#">{{ facility.textButton }}</a>
+        <a class="uppercase" href="#">
+          {{ facility.textButton }}
+        </a>
       </button>
     </li>
   </ul>
@@ -21,7 +23,7 @@ export default {
 
 <style lang="scss" scoped>
 //// Import variables
-@import "../scss/General/_vars.scss";
+@import "@/scss/General/_vars.scss";
 //// Import general style of facility
-@import "../scss/Main/FacilityStyle.scss";
+@import "@/scss/Main/FacilityStyle.scss";
 </style>

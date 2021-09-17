@@ -1,6 +1,6 @@
 <template>
   <header class="bg-header">
-    <!-- Header top -->
+    <!-- HEADER TOP -->
     <section id="header-bar" class="container">
       <!-- Logo  -->
       <a href="#">
@@ -15,7 +15,7 @@
         <NavItems :nav="nav" />
       </nav>
     </section>
-    <!-- Header bottom -->
+    <!-- HEADER BOTTOM -->
     <section id="spotlight" class="container-small">
       <div class="text-spotlight">
         <h2>
@@ -35,7 +35,9 @@
 </template>
 
 <script>
-import NavItems from "@/components/NavItems.vue";
+//// Nav component import
+import NavItems from "@/components/Header/NavItems.vue";
+
 export default {
   name: "Header",
   components: {
@@ -43,7 +45,7 @@ export default {
   },
   data() {
     return {
-      //// Navigation bar data array
+      //* Navigation bar data array
       nav: [
         {
           id: "1",
@@ -77,9 +79,9 @@ export default {
 
 <style lang="scss" scoped>
 //// Import variables
-@import "../scss/General/_vars.scss";
+@import "@/scss/General/_vars.scss";
 //// Import general style header
-@import "../scss/Header/HeaderStyle.scss";
+@import "@/scss/Header/HeaderStyle.scss";
 //// Import spotlight style
-@import "../scss/Header/SpotlightStyle.scss";
+@import "@/scss/Header/SpotlightStyle.scss";
 </style>

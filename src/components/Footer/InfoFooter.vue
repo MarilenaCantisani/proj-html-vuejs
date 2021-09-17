@@ -1,4 +1,5 @@
 <template>
+  <!-- INFO-FOOTER SECTION -->
   <section id="info-footer">
     <div class="adava-info container">
       <!-- Social  -->
@@ -45,7 +46,9 @@
         <ul>
           <li v-for="(department, index) in departments" :key="index">
             <i class="fas fa-chevron-circle-right"></i>
-            <a href="#" class="clickable">{{ department }}</a>
+            <a href="#" class="clickable">
+              {{ department }}
+            </a>
           </li>
         </ul>
         <button class="uppercase clickable">View our departments</button>
@@ -60,6 +63,7 @@ export default {
   props: ["departments"],
   data() {
     return {
+      //* Social data array
       socialClass: [
         "fa-facebook-square",
         "fa-twitter-square",
@@ -73,7 +77,7 @@ export default {
 
 <style lang="scss" scoped>
 //// Import variables
-@import "../scss/General/_vars.scss";
+@import "@/scss/General/_vars.scss";
 //// Import footer style
-@import "../scss/Footer/FooterStyle.scss";
+@import "@/scss/Footer/FooterStyle.scss";
 </style>

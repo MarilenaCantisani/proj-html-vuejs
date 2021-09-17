@@ -1,5 +1,5 @@
 <template>
-  <!-- Doctors section -->
+  <!-- DOCTORS SECTION -->
   <section id="doctors-section">
     <div class="container-small">
       <SectionTitle title="meet our doctors" :iconSection="iconSection" />
@@ -7,7 +7,7 @@
       <article>
         <ul class="card-container">
           <li v-for="doctor in doctors" :key="doctor.name">
-            <DoctorCard :doctor="doctor" />
+            <DoctorCard :doctor="doctor" :socialIcon="socialIcon" />
           </li>
         </ul>
       </article>
@@ -17,9 +17,10 @@
 
 <script>
 //// Import component title section
-import SectionTitle from "@/components/SectionTitle.vue";
+import SectionTitle from "@/components/Main/SectionTitle.vue";
 //// Import component card doctor
-import DoctorCard from "@/components/DoctorCard.vue";
+import DoctorCard from "@/components/Main/DoctorCard.vue";
+
 export default {
   name: "Doctors",
   components: {
@@ -29,6 +30,7 @@ export default {
   data() {
     return {
       iconSection: require("@/assets/images/icon-5.png"),
+      //* Doctors data array
       doctors: [
         {
           name: "Jon Snow",
@@ -46,6 +48,12 @@ export default {
           profile: require("@/assets/images/doctor-3.jpg"),
         },
       ],
+      //* Social data array
+      socialIcon: [
+        "fa-facebook-square",
+        "fa-twitter-square",
+        "fa-instagram-square",
+      ],
     };
   },
 };
@@ -53,7 +61,19 @@ export default {
 
 <style lang="scss" scoped>
 //// Import variables
-@import "../scss/General/_vars.scss";
-//// Import general style of doctors section
-@import "../scss/Main/DoctorsStyle.scss";
+@import "@/scss/General/_vars.scss";
+
+//// Style doctors section
+#doctors-section {
+  background-color: $bg-section;
+}
+//* Style card container
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  li {
+    list-style-type: none;
+  }
+}
 </style>

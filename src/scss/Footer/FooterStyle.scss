@@ -1,15 +1,18 @@
-//// General style
+//// GENERAL FOOTER STYLE 
 #info-footer {
-    padding: 40px 0;
-  }
-  .adava-info {
-    display: flex;
-  }
-  .contact-info,
-  .departments-info {
-    width: 350px;
-  }
+  padding: 40px 0;
+}
+.adava-info {
+  display: flex;
+}
+.contact-info,
+.departments-info {
+  width: 350px;
+}
 
+//* Import style Social info
 @import "socialInfo";
+//* Import style Contact info
 @import "contactInfo";
+//* Import style Departments info
 @import "departmentsInfo"

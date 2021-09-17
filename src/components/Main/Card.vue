@@ -1,4 +1,5 @@
 <template>
+  <!-- GENERAL CARD -->
   <div class="card" :id="id">
     <ul class="card-info">
       <!-- V-for to cycle in the data array "welcome-info" -->
@@ -22,12 +23,12 @@ export default {
 
 <style scoped lang="scss">
 //// Import variables
-@import "../scss/General/_vars.scss";
+@import "@/scss/General/_vars.scss";
 //// Cards import style
 //* Welcome card
-@import "../scss/Card/WelcomeCard.scss";
+@import "@/scss/Card/WelcomeCard.scss";
 //* Services card
-@import "../scss/Card/ServicesCard.scss";
+@import "@/scss/Card/ServicesCard.scss";
 
 //// General cards style
 .card-info {
